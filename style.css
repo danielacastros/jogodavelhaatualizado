@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    background-image: linear-gradient(135deg, #BFE4D3, #B7D0EA); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position : center center ;
+    background-attachment : fixed ;
+    color: white;
+    height: auto;
+}
+
+#jogo{
+    margin: 0 auto;
+    display: grid;  
+    grid-template-columns: 7rem 7rem 7rem;  
+    grid-template-rows: 7rem 7rem 7rem;
+}
+
+#jogo div {
+    background-color: #D1D1D1;
+    border: 3px solid #ba4fdd;
+    font-size: 80px;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.container__principal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.escolhajog{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.escolhajog h2{
+    font-size: 1.5rem;
+    color:#3f3f43;
+    text-align: center;
+}
+
+.escolhajog select{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    background: none;
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+    width: 300px;
+    border: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #525358;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(44, 43, 43);
+    border-bottom: 4px ridge #3f3f43;
+    border-right: 4px ridge #3f3f43;
+    text-align: center;
+    margin: 2rem 1rem 0rem 1rem;
+}
+
+.botao{
+    width: 300px;
+    margin: .5em;
+    padding: .4em;
+    border-bottom: 3px ridge #ba4fdd;
+    border-right: 3px ridge #ba4fdd;
+    background-color: #D182EC;
+    border-top: none;
+    border-left: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.botao:hover{
+    background-color: #ba4fdd;
+}
+
+.botao:active{
+    border:none;
+}
+
+.textoJogador{
+    display: none;
+}
+
+.selecao__jogador{
+    font-size: 32px;
+    width: 100px;
+}
+
+.esconde{
+    display: none;
+}
+
+.container__placar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3f3f43;
+    justify-content: center;
+}
+
+
+.placar{
+    border: 5px solid black;
+    text-align: center;
+    width: 15rem;
+    background-color: aliceblue;
+}
+
+.placar th, .placar td{
+    font-size: 1.5rem;
+    color: #3f3f43;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.btn-vermelho{
+    margin-top: 1em;
+    background-color: #D02737;
+    border-bottom: 3px ridge #ba2433;
+    border-right: 3px ridge #ba2433;
+    color: white;
+}
+
+.btn-vermelho:hover{
+    background-color: #a8212f;
+}
+
+.campeao{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    background-color: #525358;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(44, 43, 43);
+    border-bottom: 4px ridge #3f3f43;
+    border-right: 4px ridge #3f3f43;
+}
+
+@media screen and (max-width:980px) {
+    .container__principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 20.5rem;;
+    }
+    
+}

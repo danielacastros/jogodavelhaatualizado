@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container__principal">
+        <section class="escolhajogador">
+            <div class="escolhajog">
+                <h2>Escolha o jogador 1:</h2>
+                <select name="selecao1" id="selecao1" class="selecao__jogador" size="5" multiple="multiple">
+                    <option value="&#x1F436" id="cachorro">&#x1F436</option>
+                    <option value="&#x1F98A" id="raposa">&#x1F98A</option>
+                    <option value="&#x1F981" id="leao">&#x1F981</option>
+                    <option value="&#x1F419" id="joaninha">&#x1F419</option>
+                    <option value="&#x1F41E" id="polvo">&#x1F41E</option>
+                </select>
+                <button class="botao" id="botaojog1">Escolher jogador</button>
+            </div>
+            <div class="escolhajog">
+                <h2>Escolha o jogador 2:</h2>
+                <select name="selecao2" id="selecao2" class="selecao__jogador" size="5" multiple="multiple">
+                    <option value="&#x1F984" id="unicornio">&#x1F984</option>
+                    <option value="&#x1F63A" id="gato">&#x1F63A</option>
+                    <option value="&#x1F993" id="zebra">&#x1F993</option>
+                    <option value="&#x1F992" id="girafa">&#x1F992</option>
+                    <option value="&#x1F430" id="coelho">&#x1F430</option>
+
+                </select>
+                <button class="botao" id="botaojog2">Escolher jogador</button>
+            </div>
+        </section>
+        <section class="container">
+            <section id="jogo">
+                <!-- linha -->
+                <div class="quadro" data-linha="1" data-coluna="1"></div>
+                <div class="quadro" data-linha="1" data-coluna="2"></div>
+                <div class="quadro" data-linha="1" data-coluna="3"></div>
+                <!-- linha -->
+                <div class="quadro" data-linha="2" data-coluna="1"></div>
+                <div class="quadro" data-linha="2" data-coluna="2"></div>
+                <div class="quadro" data-linha="2" data-coluna="3"></div>
+                <!-- linha -->
+                <div class="quadro" data-linha="3" data-coluna="1"></div>
+                <div class="quadro" data-linha="3" data-coluna="2"></div>
+                <div class="quadro" data-linha="3" data-coluna="3"></div>
+            </section>
+        
+            <h3 id="textoJogador">Jogador: <span id="jogadorDoTurno"></span></h3>
+            <h2 id="resultado"></h2>
+
+            <button id="reiniciar" class="botao">Reiniciar</button>
+        </section>
+        <section>
+            <div class="container__placar">
+                <h4>Placar</h4>
+                <table class="placar">
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Vitórias</th>
+                        <th>Derrotas</th>
+                    </tr>
+                    <tr>
+                        <td id="jog1">J1</td>
+                        <td id="vitoria__j1" value="0">0</td>
+                        <td id="derrota__j1" value="0">0</td>
+                    </tr>
+                    <tr>
+                        <td id="jog2">J2</td>
+                        <td id="vitoria__j2" value="0">0</td>
+                        <td id="derrota__j2" value="0">0</td>
+                    </tr>
+                </table>
+                <button id="finalizarPartidas" class="botao btn-vermelho">Finalizar partidas</button>
+                <div id="campeao" class="campeao esconde"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
